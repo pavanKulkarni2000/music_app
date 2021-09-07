@@ -2,4 +2,4 @@
 
 A new Flutter project for taala.
 
-![till](./blob/master/assets/taala.gif)
+![till](./assets/taala.gif)
