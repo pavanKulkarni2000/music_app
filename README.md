@@ -2,4 +2,4 @@
 
 A new Flutter project for taala.
 
-![till](./blob/master/assets/taala.gif)
+<img src="./assets/taala.gif" width="250">
