@@ -24,14 +24,14 @@ Map kannadaTaalaNames = {
 };
 
 Map kannadaTaalaJaathis = {
-  TaalaJaathi.thrishra:'ತ್ರಿಶ್ರ',
+  TaalaJaathi.thrishra:' ತ್ರಿಶ್ರ',
   TaalaJaathi.chaturashra:'ಚತುರಶ್ರ',
   TaalaJaathi.khanda:'ಖಂಡ',
   TaalaJaathi.mishra:'ಮಿಶ್ರ',
   TaalaJaathi.sankeerna:'ಸಂಕೀರ್ಣ',
 };
 
-String translateNumber(double value) {
+String translateNumber(value) {
   String translatedStr = "";
   String str = value.toString();
   for (int i = 0; i < str.length; i++) {

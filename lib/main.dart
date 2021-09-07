@@ -109,6 +109,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   incrementTaala() {
     taala.playingIndex = (taala.playingIndex + 1) % taala.playSeqence.length;
+    if (taala.playingIndex == 0)
+      setState(() {
+        taala.count++;
+      });
   }
 
   @override
@@ -214,7 +218,22 @@ class _MyHomePageState extends State<MyHomePage> {
                   width: 8,
                 ),
               ]),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    translateNumber(taala.count),
+                    style: TextStyle(
+                        fontFamily: 'Malige',
+                        fontSize: 48,
+                        color: Colors.red.shade900,
+                        fontWeight: FontWeight.w700),
+                  ),
+                ],
+              ),
             ]),
+
+            //jaathi name display layer
             Positioned(
               bottom: 60,
               left: 0,
@@ -251,6 +270,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
+            //taala name display layer
             Positioned(
               bottom: 0,
               left: 130,
@@ -295,6 +315,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   FloatingActionButton(
                     onPressed: () {
                       taala.playingIndex = 0;
+                      setState(() => taala.count = 0);
+                      watch.reset();
                       initializeTaalaState();
                     },
                     tooltip: 'Restart',
@@ -321,6 +343,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       taala.taala = taalaSelectionData.newSelection;
                       taala.buildSequence();
                       initializeTaalaState();
+                      taala.count = 0;
                     }
                     setState(() => taalaSelectionData.isSelecting = false);
                   },
@@ -383,6 +406,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       taala.jaathi = jaathiSelectionData.newSelection;
                       taala.buildSequence();
                       initializeTaalaState();
+                      taala.count = 0;
                     }
                     setState(() => jaathiSelectionData.isSelecting = false);
                   },

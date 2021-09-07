@@ -2,4 +2,4 @@
 
 A new Flutter project for taala.
 
-![Alt Text](https://github.com/pavanKulkarni2000/music_app/blob/master/assets/taala.gif)
+<img src="https://github.com/pavanKulkarni2000/music_app/blob/master/assets/taala.gif" width="100" height="200" />

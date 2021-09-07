@@ -53,7 +53,7 @@ class TaalaData {
   TaalaType taala;
   TaalaJaathi jaathi;
   List<TaalaStep> playSeqence;
-  String name = "ಆದಿತಾಳ";
+  int count=0;
   TaalaData(
       {this.speed = 1,
       this.fps = 60,
@@ -130,11 +130,11 @@ class TaalaData {
 }
 
 class TaalaSelectionData {
-  bool isSelecting=false;
-  TaalaType newSelection=TaalaType.triputa;
+  bool isSelecting = false;
+  TaalaType newSelection = TaalaType.triputa;
 }
 
 class JaathiSelectionData {
-  bool isSelecting=false;
-  TaalaJaathi newSelection=TaalaJaathi.chaturashra;
+  bool isSelecting = false;
+  TaalaJaathi newSelection = TaalaJaathi.chaturashra;
 }
