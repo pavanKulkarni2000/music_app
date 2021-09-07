@@ -24,6 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   rive: ^0.7.9
+  translator:
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -60,7 +61,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
+  fonts:
+    - family: Malige
+      fonts:
+        - asset: assets\fonts\Malige.ttf
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
